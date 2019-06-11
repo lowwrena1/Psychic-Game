@@ -5,8 +5,15 @@
 </head>
 <body>
 
+        <div>
+                <p id="directions-text">Guess what letter i'm thinking of!</p>
+                <p id="wins-text">Wins</p>
+                <p id="losses-text">Losses</p>
+                <p id="guessesLeft-text">Guesses left</p>
+                <p id="userGuesses-text"> You're guesses</p>
+              </div>
         <script type="text/javascript">
-            var options = ["a","b", "c", "d", "E", "F", "G", "H", "I", "J", "K", "L", "M","N", "O", "P", "Q", "R", "S", "T", "U", ];
+            var options = ["a","b", "c", "d", "E", "F", "G", "H", "I", "J", "K", "L", "M","N", "O", "P", "Q", "R", "S", "T", "U", "V", "W","x","Y","Z" ];
             document.onkeyup = function(){
                var userguess = String.fromCharCode(event.keyCode).
                toLowerCase();
