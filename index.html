@@ -5,22 +5,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-
+<!--counter 
+counter +=1; (js)
+if (counter === targetLetter) {
+    alert("you win!"); }
+else if (counter > targetLetter) { alert("you lose"); }
+-->
         <div class="maindiv">
-               <div class="letter"> <p>Guess what letter i'm thinking of!</p></div>
+               <div class="letter"> <p id="letter">Guess what letter i'm thinking of!</p></div>
                 <div class="wins-text"><p id="wins-text">Wins</p></div>
                 <div class="losses-text"><p id="losses-text">Losses</p></div>
                 <div class="guessesleft-text"><p id="guessesLeft-text">Guesses left</p></div>
                 <div class="userguess-text"><p id="userGuesses-text"> You're guesses</p></div>
               </div>
-        <script type="text/javascript">
-            var options = ["a","b", "c", "d", "E", "F", "G", "H", "I", "J", "K", "L", "M","N", "O", "P", "Q", "R", "S", "T", "U", "V", "W","x","Y","Z" ];
-            document.onkeyup = function(){
-               var userguess = String.fromCharCode(event.keyCode).
-               toLowerCase();
-               console.log(userguess);
-            }
-           var computerGuess = options[Math.floor(Math.random()*options.length)];
-           console.log(computerGuess);
-</script>
+            
+              <script src="assets/javascript/game.js"></script
 </body>

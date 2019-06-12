@@ -1,24 +1,15 @@
 .letter{
-    border-style: solid;
-    border-color: black;
-    border: 5px;
+    border: 3.5px solid black
 }
 .wins-text{
-    border-style: solid;
-    border-color: black;
-    border: 5px;}
- .losses-text{
-    border-style: solid;
-    border-color: black;
-    border: 5px;
-    }
+    border: 3.5px solid black
+}
+.losses-text{
+    border: 3.5px solid black
+}
 .guessesleft-text{
-    border-style: solid;
-    border-color: black;
-    border: 5px;
+    border: 3.5px solid black
 }
 .userguess-text{
-    border-style: solid;
-    border-color: black;
-    border: 5px;
+    border: 3.5px solid black
 }
