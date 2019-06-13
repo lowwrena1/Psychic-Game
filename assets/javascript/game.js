@@ -12,7 +12,7 @@ let reset = () => {
     computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     guessesLeft = 9;
     wrongGuess = [];
-    losses++
+    
 }
 document.onkeyup = function(event){
     if (event.keyCode >= 65 && event.keyCode <= 90) {
@@ -28,11 +28,13 @@ document.onkeyup = function(event){
             console.log(`You now have ${wins} wins`)
         } else {
             --guessesLeft
+           
             console.log(`You now have ${guessesLeft} guesses left`);
             wrongGuess.push(userKeyPressed);
         }
-        if (guessesLeft === 0) {
-            console.log('You Lose')
+        if (guessesLeft === 0) { 
+            losses++;
+           console.log('You Lose')
             reset()
         }
     } else {
@@ -49,4 +51,3 @@ document.onkeyup = function(event){
 }
     //why does my code add losses when the user wins?
     //how do i keep the words while showing number results?
-    
