@@ -7,14 +7,46 @@ var answerArray = [];
 var wins = 0;
 let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
 var losses = 0;
+let reset = () => {
+    console.log("Resetting........")
+    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    guessesLeft = 9;
+    wrongGuess = [];
+    losses++
+}
+document.onkeyup = function(event){
+    if (event.keyCode >= 65 && event.keyCode <= 90) {
+        console.log(event)
+        var userKeyPressed = event.key.toLowerCase();
+        if (chances === 0) {
+            console.log(computerGuess)
+        }
 
-    var directionsText = document.getElementById("directions-text");
-    var userChoiceText = document.getElementById("userchoice-text");
-    var winsText = document.getElementById("wins-text");
-    var lossesText = document.getElementById("losses-text");
-            
-            document.onkeyup = function(){
-               var userguess = String.fromCharCode(event.keyCode).
-               toLowerCase();
-               console.log(userguess); }
-         
+        if (computerGuess === userKeyPressed) {
+            ++wins
+            reset()
+            console.log(`You now have ${wins} wins`)
+        } else {
+            --guessesLeft
+            console.log(`You now have ${guessesLeft} guesses left`);
+            wrongGuess.push(userKeyPressed);
+        }
+        if (guessesLeft === 0) {
+            console.log('You Lose')
+            reset()
+        }
+    } else {
+        alert("Not a number")
+    }
+
+    document.getElementById("wins").innerHTML = wins;
+
+    document.getElementById("userGuess").innerHTML = wrongGuess;
+
+    document.getElementById("guessesLeft").innerHTML = guessesLeft;
+
+    document.getElementById("losses").innerHTML = losses;
+}
+    //var userguess = String.fromCharCode(event.keyCode).
+   // toLowerCase();
+    //console.log(userguess); } 

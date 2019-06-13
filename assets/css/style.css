@@ -1,15 +1,15 @@
 .letter{
     border: 3.5px solid black
 }
-.wins-text{
+.wins{
     border: 3.5px solid black
 }
-.losses-text{
+.losses{
     border: 3.5px solid black
 }
-.guessesleft-text{
+.guessesleft{
     border: 3.5px solid black
 }
-.userguess-text{
+.userguess{
     border: 3.5px solid black
 }
