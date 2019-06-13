@@ -1,15 +1,29 @@
 .letter{
-    border: 3.5px solid black
+    border: 3.5px solid blue;
+    margin: 10px;
 }
 .wins{
-    border: 3.5px solid black
+    border: 3.5px solid green;
+    margin: 10px;
 }
 .losses{
-    border: 3.5px solid black
+    border: 3.5px solid red;
+    margin: 10px;
 }
 .guessesleft{
-    border: 3.5px solid black
+    border: 3.5px solid yellow;
+    margin: 10px;
 }
 .userguess{
-    border: 3.5px solid black
+    border: 3.5px solid purple;
+    margin: 10px;
+}
+.maindiv {
+    font-family:  Arial, Arial, Helvetica, sans-serif ;
+    text-align: absolute;
+    width: 960px;
+    padding: 100px 200px;
+    background: transparent;
+   
+   border: black
 }

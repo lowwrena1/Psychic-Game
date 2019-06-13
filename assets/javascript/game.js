@@ -47,6 +47,6 @@ document.onkeyup = function(event){
 
     document.getElementById("losses").innerHTML = losses;
 }
-    //var userguess = String.fromCharCode(event.keyCode).
-   // toLowerCase();
-    //console.log(userguess); } 
+    //why does my code add losses when the user wins?
+    //how do i keep the words while showing number results?
+    
