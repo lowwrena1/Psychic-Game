@@ -12,3 +12,4 @@ This application is a simple guessing game. The user well have to try and guess 
 * If the guess was wrong you will see the letter displayed in the bottom row under "Wrong guesses".
 * If the guess is correct you will recieve a win count.
 * The user has nine guesses per round, If the user does not guess the correct letter the loss counter will go up by one.
+![](assets/images/pGame.PNG)
