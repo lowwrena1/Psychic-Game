@@ -40,15 +40,15 @@ document.onkeyup = function(event){
     } else {
         alert("Not a number")
     }
+//displays new numbers based off of the users guesses.
+    document.getElementById("wins").innerHTML ="Wins: "+ wins;
 
-    document.getElementById("wins").innerHTML = wins;
+    document.getElementById("userGuess").innerHTML ="Wrong Guesses: " + wrongGuess;
 
-    document.getElementById("userGuess").innerHTML = wrongGuess;
+    document.getElementById("guessesLeft").innerHTML ="Guesses Left: " + guessesLeft;
 
-    document.getElementById("guessesLeft").innerHTML = guessesLeft;
-
-    document.getElementById("losses").innerHTML = losses;
+    document.getElementById("losses").innerHTML ="Losses: " + losses;
 }
     //why does my code add losses when the user wins?
     //how do i keep the words while showing number results?
-    //rework lines44-51
+   
