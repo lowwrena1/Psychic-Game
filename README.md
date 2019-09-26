@@ -2,9 +2,9 @@
 This application is a simple guessing game. The user well have to try and guess the letter that the computer is thinking of. Are you psychic? can you guess the letter?
 
 # Technologies used:
- *html
- *JavaScript
- *jQuery
+ * html
+ * JavaScript
+ * jQuery
  
  # Instructions:
  Type a letter on you keyboard.
