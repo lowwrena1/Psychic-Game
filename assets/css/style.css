@@ -1,3 +1,13 @@
+ body {
+        background-image: url(http://www.soulandspiritmagazine.com/wp-content/uploads/2017/03/shutterstock_132890264-590x394.jpg);
+     
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.8;
+     }
+
 .letter{
     border: 3.5px solid blue;
     margin: 10px;
@@ -26,4 +36,4 @@
     background: transparent;
    
    border: black
-}
+} 

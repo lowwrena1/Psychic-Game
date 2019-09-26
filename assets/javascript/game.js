@@ -51,3 +51,4 @@ document.onkeyup = function(event){
 }
     //why does my code add losses when the user wins?
     //how do i keep the words while showing number results?
+    //rework lines44-51
